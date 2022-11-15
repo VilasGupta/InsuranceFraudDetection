@@ -4,31 +4,14 @@ from kneed import KneeLocator
 from file_operations import file_methods
 
 class KMeansClustering:
-    """
-            This class shall  be used to divide the data into clusters before training.
-
-            Written By: iNeuron Intelligence
-            Version: 1.0
-            Revisions: None
-
-            """
+  
 
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
         self.logger_object = logger_object
 
     def elbow_plot(self,data):
-        """
-                        Method Name: elbow_plot
-                        Description: This method saves the plot to decide the optimum number of clusters to the file.
-                        Output: A picture saved to the directory
-                        On Failure: Raise Exception
-
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
-
-                """
+     
         self.logger_object.log(self.file_object, 'Entered the elbow_plot method of the KMeansClustering class')
         wcss=[] # initializing an empty list
         try:
@@ -53,17 +36,7 @@ class KMeansClustering:
             raise Exception()
 
     def create_clusters(self,data,number_of_clusters):
-        """
-                                Method Name: create_clusters
-                                Description: Create a new dataframe consisting of the cluster information.
-                                Output: A datframe with cluster column
-                                On Failure: Raise Exception
-
-                                Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
-
-                        """
+    
         self.logger_object.log(self.file_object, 'Entered the create_clusters method of the KMeansClustering class')
         self.data=data
         try:
