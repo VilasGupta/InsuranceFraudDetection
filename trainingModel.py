@@ -10,9 +10,6 @@ from application_logging import logger
 import numpy as np
 import pandas as pd
 
-#Creating the common Logging object
-
-
 class trainModel:
 
     def __init__(self):
