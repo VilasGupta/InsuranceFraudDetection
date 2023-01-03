@@ -1,7 +1,7 @@
 from datetime import datetime
-from Prediction_Raw_Data_Validation.predictionDataValidation import Prediction_Data_validation
-from DataTypeValidation_Insertion_Prediction.DataTypeValidationPrediction import dBOperation
-from DataTransformation_Prediction.DataTransformationPrediction import dataTransformPredict
+from predictionDataValidation import Prediction_Data_validation
+from DataTypeValidationPrediction import dBOperation
+from DataTransformationPrediction import dataTransformPredict
 from application_logging import logger
 
 class pred_validation:
