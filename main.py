@@ -19,8 +19,6 @@ CORS(app)
 
 @app.route("/", methods=['GET'])
 @cross_origin()
-def home():
-    return render_template('index.html')
 
 @app.route("/predict", methods=['POST'])
 @cross_origin()
